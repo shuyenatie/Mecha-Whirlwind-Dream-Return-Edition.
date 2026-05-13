@@ -1,0 +1,48 @@
+{
+  "name": "mecha-storm",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "机甲旋风 - 横版格斗网页游戏，致敬经典",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "check:visual-authenticity": "node scripts/check-visual-authenticity.js",
+    "check:playtest-visual-fixes": "node scripts/check-playtest-visual-fixes.js",
+    "check:visual-assets": "node scripts/check-visual-assets.js",
+    "check:combat": "node scripts/check-combat-registration.js",
+    "check:combat-authenticity": "node scripts/check-combat-authenticity.js",
+    "check:playtest-combat-fixes": "node scripts/check-playtest-combat-fixes.js",
+    "check:combat-feel": "node scripts/check-combat-feel.js",
+    "check:combat-feel-v2": "node scripts/check-combat-feel-v2.js",
+    "check:drops": "node scripts/check-drop-behavior.js",
+    "check:enemy-ai": "node scripts/check-enemy-ai.js",
+    "check:boss-skills": "node scripts/check-boss-skills.js",
+    "check:enemy-projectiles": "node scripts/check-enemy-projectiles.js",
+    "check:ui-feedback": "node scripts/check-ui-feedback.js",
+    "check:playtest-flow-fixes": "node scripts/check-playtest-flow-fixes.js",
+    "check:playtest-fixes": "npm run check:playtest-combat-fixes && npm run check:playtest-visual-fixes && npm run check:playtest-flow-fixes",
+    "check:melee-and-assets": "node scripts/check-melee-and-asset-cleanup.js",
+    "check:player-attack-release": "node scripts/check-player-attack-release.js",
+    "check:progression": "node scripts/check-progression.js",
+    "check:progression-v2": "node scripts/check-progression-v2.js",
+    "check:skill-system": "node scripts/check-skill-system.js",
+    "check:stage-background": "node scripts/check-stage-background-composition.js",
+    "check:stage-flow": "node scripts/check-stage-flow.js",
+    "check:stage-loop-v2": "node scripts/check-stage-loop-v2.js",
+    "check:stage-pack": "node scripts/check-stage-pack.js",
+    "check:stage-visuals": "node scripts/check-stage-visual-mapping.js",
+    "check:tianjian-cleaned-assets": "node scripts/check-tianjian-cleaned-assets.js",
+    "check:tianjian-animation": "node scripts/check-tianjian-animation.js",
+    "check:animation-authenticity": "node scripts/check-animation-authenticity.js",
+    "clean:tianjian-assets": "powershell -ExecutionPolicy Bypass -File tools/clean_tianjian_assets.ps1",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "phaser": "^3.80.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5",
+    "vite": "^5.2.0"
+  }
+}
